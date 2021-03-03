@@ -1,0 +1,159 @@
+html{
+  height: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: "Sawarabi Mincho";
+  background:linear-gradient(#fdeff2, white, white, white, #fef4f4, #fdeff2);
+}
+h1{
+  margin: 0;
+  padding: 0;
+  transition: 1s ease-in-out;
+}
+h1:hover{
+  text-shadow: 3px 2px 3px;
+}
+p{
+  font-size: 1.2em;
+}
+ h1,h2,h3,p{
+  color: #606060;
+}
+a{
+  margin: 0;
+  padding: 0;
+}
+footer{
+  width: 100%;
+  background-color: #250d00;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+img{
+  min-width: 400px;
+  max-width: 700px;
+}
+.guide{
+  background-image: url("back_image.PNG");
+  background-size: cover;
+  background-color: #fdeff2;
+}
+.guide_p{
+  font-size: 1.2em;
+  margin: 5px;
+}
+.guide_span{
+  transition: 1s ease-in-out;
+}
+.guide_span:hover{
+  font-size: 1.3em;
+  color: #505050;
+  text-shadow: 3px 2px 3px;
+}
+.tour_video{
+  min-width: 300px;
+}
+.tour_p{
+  text-align: left;
+  margin-left: 15%;
+  margin-right: 10%;
+  padding-left: 3%;
+  border-left: #606060 solid 1px;
+}
+.info_p{
+  text-align: left;
+  margin-left: 8%;
+  margin-right: 40%;
+  font-size: 1em;
+  padding-left: 3%;
+  border-left: #606060 solid 1px;
+}
+.title{
+  position: relative;
+  display: block;
+  padding: 30px;
+}
+.title:before{
+  content: "";
+  margin-top: -10px;
+  display: block;
+  position: absolute;
+  width: 5%;
+  border-top: solid 2px #808080;
+  transition: 1s ease-in-out;
+  left: 0;
+}
+.title:after{
+  content: "";
+  margin-top: 10px;
+  display: block;
+  position: absolute;
+  width: 5%;
+  border-top: solid 2px #808080;
+  transition: 1s ease-in-out;
+  right: 0;
+}
+.title:hover:before{
+  width: 70%;
+  left: 15%
+}
+.title:hover:after{
+  width: 70%;
+  right: 15%;
+}
+.content{
+  flex: 1;
+  padding-bottom: 10px;
+}
+.copy{
+  color: white;
+  font-size: 0.8em;
+  font-family: none;
+  text-align: center;
+}
+
+@media screen and (orientation: landscape){
+  .side{
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .tour{
+    flex: auto;
+    padding: 2vh;
+    width: 50%
+  }
+  .title{
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    display: block;
+  }
+  .title:after{
+    content: "";
+    margin-top: 10px;
+    display: block;
+    position: absolute;
+    width: 5%;
+    border-top: solid 2px #808080;
+    transition: 1s ease-in-out;
+    right: 0;
+  }
+  .title:hover:before{
+    width: 90%;
+    left: 5%
+  }
+  .title:hover:after{
+    width: 90%;
+    right: 5%;
+  }
+}
