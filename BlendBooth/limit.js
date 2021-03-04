@@ -1,6 +1,7 @@
 function init() {
   var limit = 1024 * 1024 * 3;
-  var input = document.getElementById('audio');
+  var fileInput = document.getElementById('audio');
+  var fileSend = document.getElementById('submit');
 
   function sizeCheck() {
     var files = input.files;
@@ -15,5 +16,6 @@ function init() {
   function send(){
     console.log(files[0].name);
   }
+  fileSend.addEventListener('onclick', send);
 }
 window.onload = init;
