@@ -16,6 +16,6 @@ function init() {
     console.log(files[0].name);
     fileInput.value = '';
   }
-  document.getElementById('submit').addEventListener('onclick',send)
+  document.getElementById('submit').addEventListener('onclick',send);
 }
 window.onload = init;
