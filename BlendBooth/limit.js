@@ -9,13 +9,10 @@ function init() {
       fileInput.value = '';
       return;
     }
-  }
-  fileInput.addEventListener('change',sizeCheck);
-
-  function send(){
+    window.confirm(files[0].name + 'を投稿します。')
     console.log(files[0].name);
     fileInput.value = '';
   }
-  document.getElementById('submit').addEventListener('onclick',send);
+  fileInput.addEventListener('change',sizeCheck);
 }
 window.onload = init;
