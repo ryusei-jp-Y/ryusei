@@ -9,6 +9,7 @@ function init() {
       input.value = '';
       return;
     }
+    console.log(files.name);
   }
   input.addEventListener('change', sizeCheck);
 }
