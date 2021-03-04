@@ -9,8 +9,11 @@ function init() {
       input.value = '';
       return;
     }
-    console.log(files[0].name);
   }
   input.addEventListener('change', sizeCheck);
+
+  function send(){
+    console.log(files[0].name);
+  }
 }
 window.onload = init;
