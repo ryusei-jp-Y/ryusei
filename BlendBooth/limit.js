@@ -6,15 +6,16 @@ function init() {
     var files = fileInput.files;
     if (files[0].size > limit) {
       alert('ファイルサイズは3MB以下にしてください');
-      input.value = '';
+      fileInput.value = '';
       return;
     }
   }
-  fileInput.addEventListener('change', sizeCheck;
+  fileInput.addEventListener('change',sizeCheck);
 
   function send(){
     console.log(files[0].name);
+    fileInput.value = '';
   }
-  document.getElementById('submit').addEventListener('onclick',send
+  document.getElementById('submit').addEventListener('onclick',send)
 }
 window.onload = init;
