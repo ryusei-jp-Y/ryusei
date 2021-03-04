@@ -10,7 +10,7 @@ function init() {
       return;
     }
   }
-  input.addEventListener('change', sizeCheck);
+  fileInput.addEventListener('change', sizeCheck);
 
   function send(){
     console.log(files[0].name);
