@@ -21,7 +21,7 @@
       <div class="ctrl_panel">
         <div class="player">
           <ul class="flex_list">
-            <li class="play" v-if="!play" @click="mode_check(tempo)"><i class="fas fa-play"></i></li>
+            <li class="play" v-if="!play" @click="playStart(tempo)"><i class="fas fa-play"></i></li>
             <li class="stop" v-if="play" @click="playStop(tempo)"><i class="fas fa-stop"></i></li>
           </ul>
         </div>
@@ -59,7 +59,7 @@
             <li @mousedown="reset()"><i class="fas fa-undo"></i></li>
           </ul>
         </div>
-        <form id="mode-select">
+        <form id="mode_select">
           <input type="radio" name="mode" value="sound"　checked="checked">
           <input type="radio" name="mode" value="vibration">
         </form>
