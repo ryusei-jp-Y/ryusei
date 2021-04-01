@@ -6,7 +6,7 @@
   <title>Multi nome</title>
   <link rel="stylesheet" href="nome.css" type="text/css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="manifest.json">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
   <script>
     window.Vue || document.write('<script src="vue/vue.min.js"><\/script>');
@@ -59,9 +59,15 @@
             <li @mousedown="reset()"><i class="fas fa-undo"></i></li>
           </ul>
         </div>
+      </div>
+      <div class="mode_panel">
         <form id="mode_select">
-          <input type="radio" name="mode" value="sound"　checked="checked">
-          <input type="radio" name="mode" value="vibration">
+          <input type="radio" id="so" name="mode" value="sound" checked="checked">
+          <label for="so">
+            <img src="image/soundicon.png" width="70vh"></label>
+          <input type="radio" id="vi" name="mode" value="vibration">
+          <label for="vi">
+            <img src="image/vibicon.png" width="70vh"></label>
         </form>
       </div>
     </div>

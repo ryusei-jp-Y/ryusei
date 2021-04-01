@@ -28,18 +28,16 @@ new Vue({
       var element = document.getElementById('mode_select');
       var radioNodeList = element.mode;
       var checked = radioNodeList.value;
+      if (this.f_click == true) {
+        this.oscillator1.start(0);
+        this.oscillator2.start(0);
+      }
+      this.f_click = false;
+      this.play = true;
       if (checked === "sound") {
-        if (this.f_click == true) {
-          this.oscillator1.start(0);
-          this.oscillator2.start(0);
-        }
         this.nome_sound(this.tempo);
-        this.f_click = false;
-        this.play = true;
       } else if (checked === "vibration") {
         this.nome_vibration(this.tempo);
-        this.f_click = false;
-        this.play = true;
       }
     },
 
