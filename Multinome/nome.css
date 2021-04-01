@@ -13,7 +13,6 @@ body {
 
 h1 {
 	padding-top : 0.5vh;
-	padding-left: -10vh;
 	font-size: 23vh;
 	font-weight : bold;
 	text-align: center;
@@ -29,7 +28,8 @@ label {
 }
 
 label img {
-	margin: 0.5vh
+	margin: 0.5vh;
+	width: 20%;
 }
 
 #input-range{
@@ -63,7 +63,7 @@ label img {
 
 .flex_list li {
 	width : 10.5vh ;
-	padding : 2vh ;
+	padding-bottom: 2vh ;
 }
 
 .play,
@@ -86,7 +86,7 @@ label img {
 
 .tempo_ctrl li {
 	text-align : center ;
-	padding : 0;
+	padding-bottom : 2vh;
 	margin : 0.5vh ;
 	height: 5vh;
 	font-size: 4vh;
@@ -104,6 +104,7 @@ label img {
 .tempo_input li {
 	text-align : center ;
 	padding-top : 1vh;
+	padding-bottom: 2vh;
 	margin : 0.5vh ;
 	width: 10.5vh;
 	height: 8vh;
@@ -127,5 +128,5 @@ label img {
 
 .mode_panel input[type = radio]:checked + label img{
 	border: solid 0.5vh #333;
-	background-color: #dcdcdc
+	background-color: #dcdcdc;
 }
