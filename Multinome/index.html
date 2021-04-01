@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Multi nome</title>
+  <link rel="stylesheet" href="nome.css" type="text/css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="manifest" href="/manifest.json">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script>
+    window.Vue || document.write('<script src="vue/vue.min.js"><\/script>');
+  </script>
+</head>
+
+<body>
+  <div class="right_side" id="app">
+    <div class="right_side_wrapper">
+      <h1>{{ tempo }}</h1>
+      <input id="input-range" type="range" min="1" max="250" v-model="tempo">
+      <div class="ctrl_panel">
+        <div class="player">
+          <ul class="flex_list">
+            <li class="play" v-if="!play" @click="mode_check(tempo)"><i class="fas fa-play"></i></li>
+            <li class="stop" v-if="play" @click="playStop(tempo)"><i class="fas fa-stop"></i></li>
+          </ul>
+        </div>
+        <div class="tempo_ctrl">
+          <ul class="flex_list">
+            <li @mousedown="change(-1)"><i class="fas fa-angle-left"></i></li>
+            <li @mousedown="change(1)"><i class="fas fa-angle-right"></i></li>
+          </ul>
+          <ul class="flex_list">
+            <li @mousedown="change(-5)"><i class="fas fa-angle-double-left"></i></li>
+            <li @mousedown="change(5)"><i class="fas fa-angle-double-right"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="input_panel">
+        <div class="tempo_input">
+          <ul class="flex_list">
+            <li @mousedown="set(1)">1</li>
+            <li @mousedown="set(2)">2</li>
+            <li @mousedown="set(3)">3</li>
+          </ul>
+          <ul class="flex_list">
+            <li @mousedown="set(4)">4</li>
+            <li @mousedown="set(5)">5</li>
+            <li @mousedown="set(6)">6</li>
+          </ul>
+          <ul class="flex_list">
+            <li @mousedown="set(7)">7</li>
+            <li @mousedown="set(8)">8</li>
+            <li @mousedown="set(9)">9</li>
+          </ul>
+          <ul class="flex_list">
+            <li @mousedown="set(0)">0</li>
+            <li @mousedown="back()"><i class="fas fa-arrow-left"></i></li>
+            <li @mousedown="reset()"><i class="fas fa-undo"></i></li>
+          </ul>
+        </div>
+        <form id="mode-select">
+          <input type="radio" name="mode" value="sound"　checked="checked">
+          <input type="radio" name="mode" value="vibration">
+        </form>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="nome.js"></script>
+  <script type="application/javascript" src="register_sw.js">
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+* {
+	box-sizing: border-box;
+	margin : 0 ;
+	padding : 0 ;
+}
+
+body {
+	display: flex ;
+	font-size : 13px ;
+	width : 100% ;
+}
+
+h1 {
+	padding : 5px;
+	font-size: 12em;
+	font-weight : bold;
+	text-align: center;
+}
+
+li {
+	list-style-type: none;
+}
+
+.right_side {
+	padding : 10px ;
+	width : 100% ;
+	height : 100vh ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.right_side_wrapper {
+	position : relative ;
+	top : -5% ;
+	max-width: 100%;
+	width: 350px;
+}
+
+.flex_list {
+	display: flex ;
+}
+
+.flex_list li {
+	width : 67px ;
+	padding : 13px ;
+}
+
+.player li {
+	font-size : 30px ;
+	cursor: pointer ;
+}
+
+
+.play,
+.stop {
+	padding : 5px ;
+	margin : 5px ;
+	height: 80px;
+	background : #333 ;
+	color : #fff ;
+	cursor : pointer ;
+	text-align: center ;
+}
+
+.ctrl_panel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin : 20px 0 ;
+}
+
+.tempo_ctrl li {
+	text-align : center ;
+	padding : 4px ;
+	margin : 5px ;
+	height: 35px;
+	font-size: 25px;
+	background : #333 ;
+	color : #fff ;
+	cursor : pointer ;
+}
+
+.input_panel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin : 20px 0 ;
+}
+
+.tempo_input li {
+	text-align : center ;
+	padding : 14px ;
+	margin : 3px ;
+	width: 70px;
+	height: 50px;
+	font-size: 20px;
+	background : #333 ;
+	color : #fff ;
+	cursor : pointer ;
+}
