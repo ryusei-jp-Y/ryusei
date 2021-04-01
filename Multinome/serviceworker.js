@@ -1,10 +1,10 @@
 var cacheName = 'Multinome';
 
 var filesToCache = [
-  '/',
-  '/index.html',
-  '/nome.js',
-  '/nome.css'
+  './',
+  './index.html',
+  './nome.js',
+  './nome.css'
 ];
 
 self.addEventListener('install', function(event) {

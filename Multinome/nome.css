@@ -16,7 +16,7 @@ h1 {
 	font-size: 23vh;
 	font-weight : bold;
 	text-align: center;
-	width:40vh;
+	width:20vh;
 }
 
 li {
@@ -53,7 +53,6 @@ label img {
 
 .right_side_wrapper {
 	position : relative ;
-	top : -5% ;
 	max-width: 100%;
 }
 
