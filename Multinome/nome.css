@@ -122,6 +122,8 @@ label img {
 
 .mode_panel input[type = radio] {
 	display: none;
+	-webkit-appearance: none;
+	appearance: none;
 }
 
 .mode_panel input[type = radio]:checked + label img{
