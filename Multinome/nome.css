@@ -80,12 +80,11 @@ label img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-top: 1vh;
 }
 
 .tempo_ctrl li {
 	text-align : center ;
-	padding-bottom : 2vh;
+	padding : 0.5vh;
 	margin : 0.5vh ;
 	height: 5vh;
 	font-size: 4vh;
