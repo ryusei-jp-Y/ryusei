@@ -91,7 +91,7 @@ new Vue({
     nome_vibration() {
       console.log("success");
       this.pi = 60 * 1000 / this.tempo;
-      navigator.vaibrate(30);
+      navigator.vibrate(30);
       this.timer = setTimeout(() => this.nome_vibration(), this.pi);
       this.count++;
     },
