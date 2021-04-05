@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="skip.css">
+<link rel="stylesheet" href="//www.yatex.org/libcache/leaflet-1.3.2/leaflet.css" />
+<script src="//www.yatex.org/libcache/leaflet-1.3.2/leaflet.js"></script>
+<script type="text/javascript" src="//www.yatex.org/libcache/umappop/umappop.js"></script>
+<script src="./src/leaflet-omnivore.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="vrmap.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+<!--
+var targetLoc = L.latLng(
+38.893690,139.819071
+);
+var foundMsg  = "こんにちは。See you.";
+var threshold = 3;
+var defIcon   = "main.png";
+// -->
+</script>
+<title>場所当てGPSゲーム</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body onload="goinit();">
+<h1>場所当てGPSゲーム</h1>
+<h2><span id="rest"></span></h2>
+
+<div id="map"></div>
+
+<p id="ok">OK:</p>
+<p id="err">NG:</p>
+<p id="info"> </p>
+<p class="c panel"><button id="start">追跡をはじめる</button>
+<button id="stop">追跡を終わる</button>
+<button id="Z">ずるボタン</button>
+</p>
+</body>
+</html>

@@ -1,0 +1,258 @@
+#loader-bg {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background: #000;
+	z-index: 10;
+}
+
+#loader {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 200px;
+	margin-top: -100px;
+	margin-left: -100px;
+	text-align: center;
+	color: #fff;
+	z-index: 20;
+}
+
+
+#btn-play{ width:200px; height:40px; padding:10px; font-size:18px; 
+  position: absolute;
+  bottom: 0%;
+  right: 0%;}
+
+
+/*ポップアップの記述*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    margin-top: 32%;
+
+}
+.modal{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.modal__bg{
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+.modal__content{
+    background: #fff;
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    height: 70%;
+    border-radius:50px;
+    padding: 3px;
+}
+/*ポップアップの記述ここまで*/
+
+body {
+  background-color: #Effead;
+}
+
+h1 {
+  text-align: center;
+}
+
+.a {
+  text-align: center;
+  font-size: 2em;
+}
+
+.b {
+  text-align: center;
+}
+
+button {
+  width: auto;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: visible;
+}
+
+/*縦画面用*/
+@media screen and (orientation: portrait) {
+  header{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .title{
+    width: 80%;
+  }
+
+  .center {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  #image{
+    width: 800px;
+  }
+
+  .inner {
+    text-align: center;
+    font-size: 1.5em;
+    width: 43%;
+    height: 10%;
+    padding: 30px;
+    border: 1px solid black;
+    background-color: rgba(255, 210, 111, 0.5);
+    margin: 0 auto;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  #back_image{
+    width: 100%;
+    height: 100%;
+  }
+
+  .box {
+    width: 100%;
+    height: 900px;
+    margin-top: 20%;
+    padding: 0;
+    border: 1px solid black;
+    background-color: lightgray;
+    z-index: 0;
+  }
+
+  .migisita {
+    position: absolute;
+    margin-top: 10%;
+    right: 5%;
+  }
+
+  .hidarisita {
+    position: absolute;
+    margin-top: 10%;
+    left: 5%;
+  }
+}
+
+/*横画面用*/
+@media screen and (orientation: landscape) {
+
+  header{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .title{
+    width: 15%;
+    height: 3%
+  }
+
+  .center {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  #image{
+    width : 250px;
+  }
+
+  .inner {
+    text-align: center;
+    font-size: 1.3em;
+    width: 70%;
+    height: 13%;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: rgba(255, 210, 111, 0.5);
+    margin: 0 auto;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .box {
+    width: 65%;
+    height: 250px;
+    margin: auto;
+    padding: 0;
+    border: 1px solid black;
+    background-color: lightgray;
+    z-index: 0;
+  }
+
+  #back_image{
+    width: 100%;
+    height: 100%;
+  }
+
+  .migisita {
+    position: absolute;
+    right: 0;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+  }
+
+  .hidarisita {
+    position: absolute;
+    left: 0;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+  }
+}
+
+.link {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.go {
+  font-size: 2em;
+  text-align: center;
+}

@@ -1,0 +1,47 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "{{{https://www.yatex.org/gitbucket/SKIP/reroad-test/pages/2020-fuga/m-1.html}}}",
+        "name": "地点１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.885156,
+          38.700076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "地点２",
+        "description": "{{{https://www.yatex.org/gitbucket/SKIP/reroad-test/pages/2020-fuga/m-2.html}}}"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.886121,
+          38.70016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "地点３",
+        "description": "{{{https://www.yatex.org/gitbucket/SKIP/reroad-test/pages/2020-fuga/m-3.html}}}"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.88714,
+          38.700269
+        ]
+      }
+    }
+  ]
+}

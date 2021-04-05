@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta http-equiv="content-type" charset="utf-8">
+  <meta name="viewport" container="width=device-width">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" type"text/css" href="yousan.css">
+  <title>Silk Re:road</title>
+  <script type="text/javascript" src="lib/csv.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="yousan.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+    $(function() {
+      var h = $(window).height();
+
+      $('#loader-bg ,#loader').height(h).css('display', 'block');
+    });
+
+    $(window).load(function() {
+      $('#loader-bg').delay(900).fadeOut(800);
+      $('#loader').delay(600).fadeOut(300);
+    });
+    $(function() {
+      setTimeout('stopload()', 5000);
+    });
+
+    function stopload() {
+      $('#loader-bg').delay(900).fadeOut(800);
+      $('#loader').delay(600).fadeOut(300);
+    }
+
+    $(function() {
+      $('.js-modal-open').on('click', function() {
+        $('.js-modal').fadeIn();
+        return false;
+      });
+      $('.js-modal-close').on('click', function() {
+        $('.js-modal').fadeOut();
+        return false;
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="loader-bg">
+    <div id="loader">
+      <img src="loading.gif" width="80" height="80" alt="Now Loading..." />
+      <p>Now Loading...</p>
+    </div>
+  </div>
+  <header>
+    <img src="title.PNG" alt="Silk Re:road" class="title">
+  </header>
+  <p class="center"><img id="image" src=""></P>
+  <div class="inner" id="text">
+    シナリオが表示されます。
+  </div>
+  <div class="box"><img id="back_image" alt="背景画像"></div>
+
+  <button class="migisita" id="nextP"><img src="image/next.PNG" width="150px" alt="次へ"></button>
+  <button class="hidarisita" id="backP"><img src="image/back.PNG" width="150px" alt="前へ"></button>
+
+  <!-- 音声ファイル -->
+  <audio id="bgm1" preload loop>
+    <source src="bgm_sample.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- 再生ボタン -->
+  <button id="btn-play" type="button"><i class="fas fa-play"></i></button>
+
+  <!--ポップアップの記述-->
+  <div class="content">
+    <a class="js-modal-open" href="">クリックで操作のヘルプ画面を表示</a>
+  </div>
+  <div class="modal js-modal">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+      <header>
+        <img src="title.PNG" alt="Silk Re:road" class="title">
+      </header>
+      <p class="center"></P>
+      <div class="inner" id="text">
+        シナリオが表示されます。
+      </div>
+      <div class="box">場面に応じてキャラクターの立ち絵と背景画像が表示されます。</div>
+
+      <p class="migisita">次へ進みます。</p>
+      <p class="hidarisita">前に戻ります。</p>
+
+      <!-- 再生ボタン -->
+      <p id="btn-play">音のON/OFF</p>
+      <a class="js-modal-close" href="">ヘルプ画面を閉じる(外の黒い画面をクリックしても閉じれます)</a>
+    </div>
+    <!--modal__inner-->
+    <!--ポップアップの記述ここまで-->
+
+    <script>
+      const bgm1 = document.querySelector("#bgm1"); // <audio>
+      const btn = document.querySelector("#btn-play"); // <button>
+
+      btn.addEventListener("click", () => {
+        // pausedがtrue=>停止, false=>再生中
+        if (!bgm1.paused) {
+          btn.innerHTML = '<i class="fas fa-play"></i>'; // 「再生ボタン」に切り替え
+          bgm1.pause();
+        } else {
+          btn.innerHTML = '<i class="fas fa-pause"></i>'; // 「一時停止ボタン」に切り替え
+          bgm1.play();
+        }
+      });
+
+      bgm1.addEventListener("ended", () => {
+        bgm1.currentTime = 0; // 再生位置を先頭に移動
+        btn.innerHTML = '<i class="fas fa-play"></i>'; // 「再生ボタン」に変更
+      });
+    </script>
+
+</body>
+
+</html>
