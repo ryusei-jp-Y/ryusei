@@ -1,0 +1,183 @@
+/*
+ * Style Sheet for open lecture for Tsuruoka North high school
+ */
+@media print {
+  body {
+    font-family: "IPA明朝", "yoz";
+  }
+
+  h1, h2, h3, h4, h5, h6, dt {
+    font-family: "IPA gothic", "aqua";
+  }
+
+  a:link, a:visited {
+    color: blue;
+  }
+
+  div.list {
+    margin-left: 1em;
+    border-left: 1px dotted black;
+    padding-left: 1ex;
+  }
+}
+
+body {
+  background: #ffb;
+}
+
+h1 {
+  text-align: center;
+  color: #005020;
+  margin: 0 1em;
+}
+
+h1:before {
+  content: "◆";
+  color: #a80;
+}
+
+/* dark gold */
+h1:after {
+  content: "◆";
+  color: #a80;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p, ul+p, ol+p, dl+p, p+p {
+  text-indent: 1em;
+}
+
+p.urls {
+  text-indent: 0;
+}
+
+div.fr {
+  float: right;
+  margin-left: 1em;
+}
+
+div.fr p {
+  margin: 0;
+}
+
+h2 {
+  border: #0a2 solid 0px;
+  border-left-width: 1em;
+  border-bottom-width: 1px;
+  padding: 0.2ex;
+}
+
+h3 {
+  border-left: navy solid 1em;
+  border-radius: 0.2em;
+  padding-left: 0.5ex;
+}
+
+.c {
+  text-align: center;
+}
+
+em {
+  color: red;
+}
+
+span.see {
+  color: #e22;
+}
+
+div.list {
+  background: white;
+}
+
+.screen {
+  background-color: #606060;
+  color: white;
+  margin-left: 5%;
+}
+
+.screen .u {
+  text-decoration: underline;
+}
+
+img {
+  vertical-align: middle;
+}
+
+p.framebox {
+  margin: 1ex 2em;
+  border: 1px solid navy;
+  padding: 0.5ex;
+  text-align: center;
+}
+
+dl {
+  border-left: 10px solid navy;
+  padding-left: 1em;
+  background: #ee8;
+}
+
+dt {
+  text-decoration: underline;
+}
+
+ul p, ol p {
+  margin: 0.2ex;
+}
+
+span.spot {
+  background: pink;
+  text-decoration: underline;
+}
+
+p.urls {
+  line-height: 2.8;
+  word-spacing: 2em;
+  font-size: 140%;
+}
+
+/* Map related */
+div#map {
+  width: 900px;
+  height: 700px;
+}
+
+p#ok {
+  background: white;
+}
+
+p#err {
+  background: pink;
+}
+
+p.panel button {
+  margin: 1em;
+  padding: 1em;
+  font-size: 200%;
+}
+
+button#start {
+  background: #dfd;
+}
+
+button#stop {
+  background: #fdd;
+}
+
+button#zuru {
+  display: none;
+}
+
+div#get {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  z-index: 0;
+  transition: 5s;
+  opacity: 0;
+}
+
+.leaflet-popup-content {
+  font-size: 200%;
+  width: 600px;
+}

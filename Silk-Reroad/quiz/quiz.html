@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta http-equiv="content-type" charset="utf-8">
+  <link rel="stylesheet" type"text/css" href="quiz.css">
+  <title>鶴岡と養蚕の歴史</title>
+  <script type="text/javascript" src="lib/csv.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="quiz.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <form>
+    <img id="image" src="mashiro.PNG" width="80">
+    <h1 id="title">問題のたいとる</h1>
+    <p><b id="q">問題文</b></p>
+    <label><input type="radio" name="q1" value="0">
+      <span id="choice0">0000</span><br></label>
+    <label><input type="radio" name="q1" value="1">
+      <span id="choice1">1111</span><br></label>
+    <label><input type="radio" name="q1" value="2">
+      <span id="choice2">2222</span><br></label>
+    <input type="button" id="judge" value="解答">
+    <input type="reset" value="リセット">
+    <div id="output"></div>
+  </form>
+  <button id="prev">前の問題</button>
+  <button id="next">次の問題</button>
+</body>
+
+</html>

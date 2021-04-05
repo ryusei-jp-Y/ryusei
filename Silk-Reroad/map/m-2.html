@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>パノラマのページ</title>
+    <link rel="stylesheet" type="text/css" href="./Panorama.css">
+    <script src="aframe-master/dist/aframe-v1.0.4.min.js"></script>
+</head>
+
+<body>
+  <a-scene id="vr" embedded>
+    <a-assets>
+      <img id="360" src="360picture/R0010016.JPG">
+
+    </a-assets>
+    <a-sky src="360picture/R0010016.JPG" rotation="0 -130 0"></a-sky>
+    <a-camera position="0 0 0">
+      <a-entity id="myCursor" cursor="fuse: true; fuseTimeout: 1000" position="0 0 -1" geometry="primitive: ring" scale="0.03 0.03 0.03" material="color: blue; shader: flat">
+        <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" fill="none" from="0.03 0.03 0.03" to="0.001 0.001 0.001"></a-animation>
+      </a-entity>
+    </a-camera>
+    <a-sphere position="0 0 10" color="skyblue" id="sample-obj"></a-sphere>
+  </a-scene>
+
+  <script src="panorama.js"></script>
+</body>
+</html>
