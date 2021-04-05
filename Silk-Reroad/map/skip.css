@@ -136,8 +136,8 @@ p.urls {
 
 /* Map related */
 div#map {
-  width: 900px;
-  height: 700px;
+  width: 80%;
+  height: 50%;
 }
 
 p#ok {

@@ -1,8 +1,8 @@
 #vr {
-    width: 70vh;
-    height: 40vh;
+    width: 80vh;
+    height: 50vh;
 }
-  
+
 a-scene {
     z-index: 0;
 }
