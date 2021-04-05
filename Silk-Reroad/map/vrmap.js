@@ -1,5 +1,5 @@
 function goinit() {
-    var koekidai_latlng = [38.893690,139.819071];
+    var matsugaoka_latlng = [38.700076,139.885156];
     var baseLayer = {};
     var map_osm = new L.tileLayer(
 	'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -17,7 +17,7 @@ function goinit() {
 	var o = document.getElementById(id);
 	if (o) o.innerHTML = msg;
     }
-    var map = L.map("map").setView(koekidai_latlng, 15);
+    var map = L.map("map").setView(matsugaoka_latlng, 15);
     map_osm.addTo(map);
     map_gsi.addTo(map);
     L.control.scale().addTo(map);
@@ -78,7 +78,7 @@ function goinit() {
 	}
     }
     var repeatCount = 0, repeatMax = 30;
-    var currentLoc = koekidai_latlng;
+    var currentLoc = matsugaoka_latlng;
     var curMarker, curCircle, curAccuracy;
     var curMarkerIcon = L.icon({
 	iconUrl:	defIcon || "main.png",
@@ -103,7 +103,7 @@ function goinit() {
     function onLocationError(e) {
 	putlog(e.message, "err")
 	if (true && !curMarker) {
-	    currentLoc = L.latLng(koekidai_latlng);
+	    currentLoc = L.latLng(matsugaoka_latlng);
 	    curMarker = mainMarker(currentLoc).addTo(map);
 	    curMarker.bindPopup("いまココ").openPopup();
 	}
