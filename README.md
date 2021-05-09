@@ -37,4 +37,4 @@ Portfolio
 
 説明：インターンシップの活動の中で作成したWebページ。シンプルかつ動きのあるデザインを心がけて作成した。
 
-[どさいても、庄内](https://ryusei-jp-y.github.io/portfolio/Intern-web/shonai.html)
+[どさいても、庄内](https://ryusei-jp-y.github.io/portfolio/intern-web/shonai.html)
