@@ -11,7 +11,7 @@ Portfolio
 
 その他活用した技術：Leaflet.js　A-Frame　jQuery
 
-説明：東北公益文科大学が地元地域と連携し、情報の観点から地域活性化を図るプロジェクト(Shonai Koueki Infomation Projedt)の一環として作成したWebサービス（デモ版）。歴史的建造物の情報を楽しく学ぶ事をコンセプトに物語形式で歴史や観光情報を知ることができる。（モバイル端末推奨）
+説明：東北公益文科大学が地元地域と連携し、情報の観点から地域活性化を図るプロジェクト(Shonai Koueki Infomation Project)の一環として作成したWebサービス（デモ版）。歴史的建造物の情報を楽しく学ぶ事をコンセプトに物語形式で歴史や観光情報を知ることができる。（モバイル端末推奨）
 
 [Silk-Re:road](https://ryusei-jp-y.github.io/portfolio/Silk-Reroad/index.html)
 
