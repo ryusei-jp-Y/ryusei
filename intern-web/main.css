@@ -44,7 +44,7 @@ img{
   max-width: 700px;
 }
 .guide{
-  background-image: url("back_image.PNG");
+  background-image: url("image/back_image.PNG");
   background-size: cover;
   background-color: #fdeff2;
 }
