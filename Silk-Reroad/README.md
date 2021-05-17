@@ -19,7 +19,7 @@ Silk-Re:road
 ## 構成
 本作品のファイル構成は以下の通りです。（一部省略）
 ```
-Silk-reroad
+Silk-Reroad
 ├── README.md
 ├── bgm_sample.mp3
 ├── index.html
