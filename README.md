@@ -17,7 +17,7 @@ Portfolio
 
 プロジェクトには、チームリーダー兼コーダーとして参加しており、主にシステム面やページデザインに関するコーディング作業を担当していました。現在はプロジェクトの引き継ぎを行い、現メンバーのサポートを行いながらコーディング作業を行っています。
 
-[Silk-Re:road](https://ryusei-jp-y.github.io/portfolio/Silk-Reroad/index.html)
+### [Silk-Re:road](https://ryusei-jp-y.github.io/portfolio/Silk-Reroad/index.html)
 
 ## 2.PWAを導入した多機能メトロノームWebアプリケーション
 -------------------------------
@@ -33,7 +33,7 @@ Portfolio
 
 振動機能を持たせることにより、音が出せない状況やポケットに収納している状態でも変わらずメトロノームとして利用することができます（iOSでは振動機能は利用できません）。また、正確さに関して誤差は0.05秒未満であり十分に正確なメトロノームとして利用することが可能です。
 
-[Multi nome](https://ryusei-jp-y.github.io/portfolio/Multinome/index.html)
+### [Multi nome](https://ryusei-jp-y.github.io/portfolio/Multinome/index.html)
 
 ### 3.Withコロナ時代に合わせた新しい観光案内Web
 -------------------------------
@@ -45,7 +45,7 @@ Portfolio
 
 説明：大学が主催する課題解決型インターンシップの活動の中で作成したWebページです。Withコロナの時代に合わせ、オンラインツアーのモデルプランを作成しそれらを説明・PRすることが目的のWebページです。
 
-[どさいても、庄内](https://ryusei-jp-y.github.io/portfolio/intern-web/shonai.html)
+### [どさいても、庄内](https://ryusei-jp-y.github.io/portfolio/intern-web/shonai.html)
 
 -------------------------------
 東北公益文科大学　公益学科　公益学部　メディア情報コース
