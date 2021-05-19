@@ -4,7 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "description": "{{{https://ryusei-jp-y.github.io/ryusei/Silk-Reroad/map/m-1.html}}}",
+        "description": "{{{https://ryusei-jp-y.github.io/portfolio/Silk-Reroad/map/m-1.html}}}",
         "name": "地点１"
       },
       "geometry": {
@@ -19,7 +19,7 @@
       "type": "Feature",
       "properties": {
         "name": "地点２",
-        "description": "{{{https://ryusei-jp-y.github.io/ryusei/Silk-Reroad/map/m-2.html}}}"
+        "description": "{{{https://ryusei-jp-y.github.io/portfolio/Silk-Reroad/map/m-2.html}}}"
       },
       "geometry": {
         "type": "Point",
@@ -33,7 +33,7 @@
       "type": "Feature",
       "properties": {
         "name": "地点３",
-        "description": "{{{https://ryusei-jp-y.github.io/ryusei/Silk-Reroad/map/m-3.html}}}"
+        "description": "{{{https://ryusei-jp-y.github.io/portfolio/Silk-Reroad/map/m-3.html}}}"
       },
       "geometry": {
         "type": "Point",
